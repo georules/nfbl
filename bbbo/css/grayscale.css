@@ -141,6 +141,7 @@ a:focus {
     }
 }
 
+
 .intro {
     display: table;
     width: 100%;
@@ -154,6 +155,7 @@ a:focus {
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+
 }
 
 .intro-sub{
@@ -231,7 +233,7 @@ a:focus {
     -moz-animation-timing-function: linear;
 }
 
-@-webkit-keyframes pulse {    
+@-webkit-keyframes pulse {
     0% {
         -webkit-transform: scale(1);
         transform: scale(1);
@@ -248,7 +250,7 @@ a:focus {
     }
 }
 
-@-moz-keyframes pulse {    
+@-moz-keyframes pulse {
     0% {
         -moz-transform: scale(1);
         transform: scale(1);
@@ -268,11 +270,11 @@ a:focus {
 
 
 .about-section {
-      
+
     width: 100%;
     padding: 100px 0;
     color: #fff;
-    
+
     background-color: rgba(79, 57, 38,1.0);
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -289,31 +291,39 @@ a:focus {
     width: 100%;
     padding: 150px 0;
     color: #fff;
-    
+
     background-color: #5C4B33;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+
+    background: url(../img/bbbo2.jpg) no-repeat center center scroll;
+    background-size: contain;
+
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
 }
 
+
+
 .enter-section {
     width: 100%;
     padding: 100px 0;
     color: #fff;
-    
-    background-color: #000000;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
+    background-color: #5C4B33;
+
+
+
 }
 
 .winners-section {
     width: 100%;
     padding: 100px 0;
     color: #fff;
-    
+
     background-color: rgba(79, 57, 38, 1);
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -325,7 +335,7 @@ a:focus {
     width: 100%;
     padding: 100px 0;
     color: #fff;
-    
+
     background-color: #5C4B33;
     -webkit-background-size: cover;
     -moz-background-size: cover;
