@@ -20,6 +20,7 @@ $(function() {
         $('html, body').stop().animate({
             scrollTop: $($anchor.attr('href')).offset().top
         }, 1500, 'easeInOutExpo');
+        history.pushState(null,null,$anchor.attr('href'))
         event.preventDefault();
     });
 });
@@ -28,5 +29,3 @@ $(function() {
 $('.navbar-collapse ul li a').click(function() {
     $('.navbar-toggle:visible').click();
 });
-
-
