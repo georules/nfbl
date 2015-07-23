@@ -20,7 +20,7 @@ $(function() {
         var location = 0;
         if ($anchor.attr('href') == "#page-top") {
           //maybe do something
-          history.pushState(null,null,"/")
+          history.pushState(null,null,"#")
         }
         else {
           location = $($anchor.attr('href')).offset().top
