@@ -17,10 +17,20 @@ $(window).scroll(function() {
 $(function() {
     $('a.page-scroll').bind('click', function(event) {
         var $anchor = $(this);
+        var location = 0;
+        if ($anchor.attr('href') == "#page-top") {
+          //maybe do something
+          history.pushState(null,null,"")
+        }
+        else {
+          $($anchor.attr('href')).offset().top
+          history.pushState(null,null,$anchor.attr('href'))
+        }
+
         $('html, body').stop().animate({
-            scrollTop: $($anchor.attr('href')).offset().top
+            scrollTop: location
         }, 1500, 'easeInOutExpo');
-        history.pushState(null,null,$anchor.attr('href'))
+
         event.preventDefault();
     });
 });
