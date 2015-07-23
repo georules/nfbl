@@ -23,7 +23,7 @@ $(function() {
           history.pushState(null,null,"")
         }
         else {
-          $($anchor.attr('href')).offset().top
+          location = $($anchor.attr('href')).offset().top
           history.pushState(null,null,$anchor.attr('href'))
         }
 
