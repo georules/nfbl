@@ -35,11 +35,17 @@ $(function() {
     });
 });
 
-// Closes the Responsive Menu on Menu Item Click
-$('.navbar-collapse ul li a').click(function() {
-    $('.navbar-toggle:visible').click();
-});
+$(document).ready(function(){
+  // Closes the Responsive Menu on Menu Item Click
+  $('.navbar-collapse ul li a').click(function() {
+      $('.navbar-toggle:visible').click();
+  });
 
-$('.navbar-brand').click(function() {
-  $('.navbar-toggle:visible').click();
+  $('.navbar-brand').click(function() {
+    //hack
+    var navbar = $($('.navbar-collapse')[0]);
+    if (navbar.attr('aria-expanded') == "true") {
+      $('.navbar-toggle:visible').click();
+    }
+  })
 })
