@@ -143,7 +143,7 @@ a:focus {
 
 
 .intro {
-
+    display: table;
     width: 100%;
     height: auto;
     padding: 100px 0;
@@ -160,23 +160,20 @@ a:focus {
 }
 
 .intro-sub{
-  position: absolute;
-  display: table;
-    height:100%;
     width:100%;
-    background-color:rgba(0, 0, 0, 0.10);
+    height:100%;
+    position:fixed;
+    top:0;
+    left:0;
+    background-color:rgba(0, 0, 0, 0.1);
 }
-.intro-sub-sub{
+
+.intro .intro-body {
     display: table-cell;
     vertical-align: middle;
 }
 
-.intro .intro-body {
-
-    vertical-align: middle;
-}
-
-.intro .intro-body .intro-sub .brand-heading {
+.intro .intro-body .brand-heading {
     margin-top:30px;
     font-size: 32px;
 }
@@ -191,11 +188,11 @@ a:focus {
         padding: 0;
     }
 
-    .brand-heading {
+    .intro .intro-body .brand-heading {
         font-size: 64px;
     }
 
-    .intro-text {
+    .intro .intro-body .intro-text {
 
         font-size: 26px;
     }
