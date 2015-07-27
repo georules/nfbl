@@ -143,13 +143,14 @@ a:focus {
 
 
 .intro {
-    display: table;
+
     width: 100%;
     height: auto;
     padding: 100px 0;
     text-align: center;
     color: #fff;
-    background: url(../img/beer.jpg) no-repeat center center scroll;
+    background: url(../img/beer.jpg) no-repeat center 20% scroll;
+
     background-color: #000;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -159,16 +160,23 @@ a:focus {
 }
 
 .intro-sub{
-    padding-top:5px;
-    padding-bottom:5px;
+  position: absolute;
+  display: table;
+    height:100%;
+    width:100%;
+    background-color:rgba(0, 0, 0, 0.10);
 }
-
-.intro .intro-body {
+.intro-sub-sub{
     display: table-cell;
     vertical-align: middle;
 }
 
-.intro .intro-body .brand-heading {
+.intro .intro-body {
+
+    vertical-align: middle;
+}
+
+.intro .intro-body .intro-sub .brand-heading {
     margin-top:30px;
     font-size: 32px;
 }
@@ -183,11 +191,11 @@ a:focus {
         padding: 0;
     }
 
-    .intro .intro-body .brand-heading {
+    .brand-heading {
         font-size: 64px;
     }
 
-    .intro .intro-body .intro-text {
+    .intro-text {
 
         font-size: 26px;
     }
