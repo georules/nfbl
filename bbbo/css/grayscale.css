@@ -303,7 +303,10 @@ a:focus {
     background-size: cover;
     -o-background-size: cover;
 
-    background: url(../img/bbbo2.jpg) no-repeat center center scroll;
+    background: linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ), url(../img/bbbo2.jpg) no-repeat center center scroll;
     background-size: contain;
 
     -webkit-background-size: cover;
